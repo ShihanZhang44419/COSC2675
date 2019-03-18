@@ -1,0 +1,12 @@
+Requirement:
+
+1. 2 clients
+2. 2 Tasks
+3. 1 contract
+
+********************************************
+Client(clients id, address, phone)
+
+task(table id, cost, duration)
+
+contact(contract id, clients id*, task id*, start_date, paid_or_not)
