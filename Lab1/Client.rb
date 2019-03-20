@@ -32,7 +32,7 @@ class Clients
     end  
     
 end 
-Clients.new("1","Atom","0413111111","King St.").show_clients()
-Clients.new("2","Bax","0413122222","Spring St.").show_clients()
+Clients.new(1,"Atom","0413111111","King St.").show_clients()
+Clients.new(2,"Bax","0413122222","Spring St.").show_clients()
 
 Clients.total_number_of_clients()
