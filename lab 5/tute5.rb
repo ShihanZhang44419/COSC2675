@@ -1,3 +1,4 @@
+
 =begin
 # Q1.a
 def myMethod1(num1,num2)
@@ -62,11 +63,13 @@ myMethod4()
 =end
 
 #Q2.1
+
 def myMethod5()
+    
     
 print Array[1,2,3,4,5,6,7,8].each_index.select {|i| i.odd?}
 
-
+print Array[1,2,3,4,5,6,7,8].each_with_index do |i|i.odd? end
 
 end
 
