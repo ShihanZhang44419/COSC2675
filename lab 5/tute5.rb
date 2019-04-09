@@ -36,7 +36,7 @@ def myMethod3(ran1,ran2)
 end
 
 myMethod3(3,10)
-=end
+
 #Q1.d 
 def myMethod4()
    print "enter 1st number: "
@@ -44,6 +44,7 @@ def myMethod4()
    #print "1st number is:  ", num5
    print "enter 2nd number: "
    num6 = gets.chomp
+
    
    if num6 == 0
        
@@ -51,10 +52,22 @@ def myMethod4()
       
     else
         
-       div = (num5) / (num6);
+       div = num5 / num6
        print "the result is: ",div
-       
+   
     end
 end
 
 myMethod4()
+=end
+
+#Q2.1
+def myMethod5()
+    
+print Array[1,2,3,4,5,6,7,8].each_index.select {|i| i.odd?}
+
+
+
+end
+
+myMethod5()
