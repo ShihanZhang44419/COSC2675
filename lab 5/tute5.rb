@@ -67,10 +67,13 @@ myMethod4()
 def myMethod5()
     
     
-print Array[1,2,3,4,5,6,7,8].each_index.select {|i| i.odd?}
+#print Array[1,2,3,4,5,6,7,8].each_index.select {|i| i.odd?}
 
-print Array[1,2,3,4,5,6,7,8].each_with_index do |i|i.odd? end
+array=[]
+[1,2,3,4,5,6,7,8].each do |x| array << x if x.odd? end
+p array
 
 end
 
 myMethod5()
+
