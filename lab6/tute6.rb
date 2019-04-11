@@ -55,7 +55,7 @@ def myMethod4()
     myHash= myHash.to_enum 
     loop do
         x = myHash.next
-        p "#{myHash}" unless myHash.to_a[1].eql?(x)
+        p "#{x}" unless myHash.to_a[1].eql?(x)
           
     end
 end
@@ -63,3 +63,13 @@ end
 myMethod4()
 
 #Q3
+def myMethod5(condition_c,true_c,fals_c)
+    if condition_c.call 
+        true_c.call
+    else
+        fals_c.call
+    end
+end
+num = 0
+
+myMethod5-> {num >1}, ->{p 'ok'}, ->{p 'no'}
