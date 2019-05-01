@@ -46,7 +46,7 @@ myArray.uniq
 print myArray.uniq!
 print "\n\n#{myArray}"
 
-myArray.each {|x| x*2}
+myArray.each {|x| puts x*2}
 
 ################################################################################
 
